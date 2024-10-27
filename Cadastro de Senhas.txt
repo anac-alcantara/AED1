@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+   int senhaAcesso;
+   int senhaCadastro;
+   
+   printf("Cadastro de Senha no Sistema.");
+   printf ("\nCadastre sua senha:");
+   scanf("%d", &senhaCadastro);
+   
+    
+   printf("\n-----------------------------\n");
+   printf("\nDigite sua senha:");
+   scanf("%d", &senhaAcesso);
+   
+     if (senhaAcesso != senhaCadastro){
+        printf("\nAcesso não permitido! Senha errada!");
+        } else {
+       printf("\nAcesso permitido!");
+        }
+   
+
+    return 0;
+}
