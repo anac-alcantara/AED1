@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+   int numUsuario;
+   int count;
+   
+   
+   printf ("Jogo de adivinhação de números!");
+   printf ("\n-----------------------------------\n");
+   
+   printf ("Tente acertar o número!");
+   printf ("\n-----------------------------------\n");
+   
+   for (count=1; count <= 5; count++){
+       printf("Tentativa número %d:", count);
+       scanf("%d", &numUsuario);
+        if (numUsuario == 42) {
+            printf("Acertou!\n");
+            break;
+        } else {
+        printf ("Errado! Tente Novamente!\n");
+        }
+   } 
+      if (count > 5) {
+       printf("Você não conseguiu acertar o número em 5 tentativas.\n");
+   }
+   
+
+    return 0;
+}
